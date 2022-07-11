@@ -43,4 +43,5 @@ jobs:
             npm install # we install any missing dependencies
             npm run build # we build our app
             pm2 start --name react-app-template npm -- start
-            pm2 reload all # we reload the app via PM2
+            #pm2 reload all # we reload the app via PM2
+            pm2 save
