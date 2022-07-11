@@ -36,9 +36,11 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd dhohirpradana # we move into our app's folder
+            ls
+            cd react-app-template # we move into our app's folder
             git pull # we pull any changes from git
             npm prune # we remove any unused dependencies
             npm install # we install any missing dependencies
             npm run build # we build our app
+            pm2 start --name react-app-template npm -- start
             pm2 reload all # we reload the app via PM2
