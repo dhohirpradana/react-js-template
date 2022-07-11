@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false # tells github to not run further steps if this one fails
       matrix:
-        node-version: [12.x] # sets the version of node we want to use, should be what you have on your server
+        node-version: [18.x] # sets the version of node we want to use, should be what you have on your server
 
     steps:
       - uses: actions/checkout@v2 # fetches your commit to test it
