@@ -36,6 +36,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+            ls
             cd dhohirpradana # we move into our app's folder
             git pull # we pull any changes from git
             npm prune # we remove any unused dependencies
