@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## visit http://dhohirdev.my.id:3000 to see
+## Visit http://dhohirdev.my.id:3000 to see
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
